@@ -1,0 +1,17 @@
+import random
+a = random.randint(0, 100)
+chi = -1
+pop = 0
+
+while chi != a:
+    pop += 1
+    chi = input()
+    if chi == 'Выход':
+        print('Бывает')
+        break
+    if int(chi) > a:
+        print('Ваше число больше нужного')
+    elif int(chi) < a:
+        print('Ваше число меньше нужного')
+    else:
+        print(f'Хорош, угадал за {pop} попыток')
